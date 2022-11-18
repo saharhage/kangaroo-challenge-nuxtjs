@@ -36,7 +36,14 @@ export default {
     '@nuxt/typescript-build',
     '@nuxtjs/vuetify',
     '@nuxtjs/composition-api/module',
+    '@nuxtjs/style-resources',
   ],
+
+  styleResources: {
+    scss: [
+      '~/assets/scss/variables.scss',
+    ],
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -44,7 +51,6 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
