@@ -1,6 +1,6 @@
 <template>
-  <v-main>
-    <v-container> Hello World </v-container>
+  <v-main class="main-page">
+    <Header />
   </v-main>
 </template>
 
@@ -24,6 +24,7 @@ h4,
 h5,
 h6,
 a,
+hr,
 button {
   margin: 0;
   padding: 0;
@@ -39,5 +40,12 @@ a,
 a:hover {
   text-decoration: none;
   color: inherit;
+}
+
+.main-page {
+  padding: 3rem !important;
+  @media screen and (max-width: 500px) {
+    padding: 1rem !important;
+  }
 }
 </style>
